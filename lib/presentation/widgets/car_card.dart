@@ -1,4 +1,5 @@
 import 'package:car_rental_bloc/data/models/car_model.dart';
+import 'package:car_rental_bloc/presentation/pages/car_details_page.dart';
 import 'package:car_rental_bloc/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -12,13 +13,12 @@ class CarCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Navigator.push(
-        //     context,
-        //     MaterialPageRoute(
-        //       builder: (context) => CardDetailsPage(
-        //         car: car,
-        //       ),
-        //     ));
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CarDetailsPage(carModel: carModel),
+          ),
+        );
       },
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 10.h, horizontal: 20.h),
