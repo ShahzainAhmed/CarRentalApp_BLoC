@@ -31,7 +31,7 @@ class CarCard extends StatelessWidget {
             ]),
         child: Column(
           children: [
-            Image.asset(AppAssets.carImage, height: 120),
+            Image.asset(carModel.image, height: 120),
             Text(
               carModel.model,
               style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),

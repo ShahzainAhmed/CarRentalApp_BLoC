@@ -3,28 +3,7 @@ import 'package:car_rental_bloc/presentation/widgets/car_card.dart';
 import 'package:flutter/material.dart';
 
 class CarListScreen extends StatelessWidget {
-  CarListScreen({super.key});
-
-  final List<CarModel> carsList = [
-    CarModel(
-      model: "Fortuner GR",
-      distance: 870,
-      fuelCapacity: 50,
-      pricePerHour: 45,
-    ),
-    CarModel(
-      model: "Fortuner GR",
-      distance: 870,
-      fuelCapacity: 50,
-      pricePerHour: 45,
-    ),
-    CarModel(
-      model: "Fortuner GR",
-      distance: 870,
-      fuelCapacity: 50,
-      pricePerHour: 45,
-    ),
-  ];
+  const CarListScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
