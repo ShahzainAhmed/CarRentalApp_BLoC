@@ -42,6 +42,13 @@ final List<CarModel> carsList = [
     image: AppAssets.carImage2,
   ),
   CarModel(
+    model: "Corolla Cross",
+    distance: 890,
+    fuelCapacity: 45,
+    pricePerHour: 40,
+    image: AppAssets.carImage4,
+  ),
+  CarModel(
     model: "Fortuner GR",
     distance: 870,
     fuelCapacity: 50,
