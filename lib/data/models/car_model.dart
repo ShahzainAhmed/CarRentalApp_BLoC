@@ -15,37 +15,37 @@ class CarModel {
     required this.image,
   });
 
-  factory CarModel.fromMap(Map<String, dynamic> map) {
-    return CarModel(
-      model: map['model'],
-      distance: map['distance'],
-      fuelCapacity: map['fuelCapacity'],
-      pricePerHour: map['pricePerHour'],
-      image: map['image'],
-    );
-  }
+  // factory CarModel.fromMap(Map<String, dynamic> map) {
+  //   return CarModel(
+  //     model: map['model'],
+  //     distance: map['distance'],
+  //     fuelCapacity: map['fuelCapacity'],
+  //     pricePerHour: map['pricePerHour'],
+  //     image: map['image'],
+  //   );
+  // }
 }
 
 final List<CarModel> carsList = [
   CarModel(
-    model: "Fortuner GR",
-    distance: 870,
-    fuelCapacity: 50,
-    pricePerHour: 45,
-    image: AppAssets.carImage,
+    model: "Crown",
+    distance: 960,
+    fuelCapacity: 35,
+    pricePerHour: 33,
+    image: AppAssets.carImage3,
   ),
   CarModel(
-    model: "Toyota Corolla",
+    model: "Corolla",
     distance: 920,
     fuelCapacity: 38,
     pricePerHour: 35,
     image: AppAssets.carImage2,
   ),
   CarModel(
-    model: "Toyota Crown",
-    distance: 960,
-    fuelCapacity: 35,
-    pricePerHour: 33,
-    image: AppAssets.carImage3,
+    model: "Fortuner GR",
+    distance: 870,
+    fuelCapacity: 50,
+    pricePerHour: 45,
+    image: AppAssets.carImage,
   ),
 ];

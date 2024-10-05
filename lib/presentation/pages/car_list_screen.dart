@@ -8,10 +8,10 @@ class CarListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
         title: const Text('Choose Your Car'),
-        backgroundColor: Colors.white,
         foregroundColor: Colors.black,
       ),
       body: ListView.builder(

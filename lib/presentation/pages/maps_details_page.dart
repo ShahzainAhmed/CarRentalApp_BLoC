@@ -139,6 +139,7 @@ Widget carDetailsCard({required CarModel carModel}) {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                SizedBox(height: 10),
                 featureIcons(),
                 SizedBox(height: 20.h),
                 Row(
@@ -170,7 +171,7 @@ Widget carDetailsCard({required CarModel carModel}) {
           ),
         ),
         Positioned(
-          top: 50.h,
+          top: 20.h,
           right: 10.w,
           child: Image.asset(AppAssets.whiteCarImage),
         ),
@@ -193,8 +194,7 @@ Widget featureIcons() {
 Widget featureIcon(IconData icon, String title, String subtitle) {
   return Container(
     width: 100.w,
-    height: 100.h,
-    padding: const EdgeInsets.all(5),
+    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(10),
       border: Border.all(color: Colors.grey, width: 1),
@@ -202,7 +202,9 @@ Widget featureIcon(IconData icon, String title, String subtitle) {
     child: Column(
       children: [
         Icon(icon),
+        SizedBox(height: 5),
         Text(title),
+        SizedBox(height: 5),
         Text(
           subtitle,
           style: const TextStyle(
