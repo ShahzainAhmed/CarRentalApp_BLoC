@@ -1,4 +1,4 @@
-# Car Rental App - BLoC Architecture
+# Car Rental App - BLoC 
 
 ### LinkedIn Post:
 https://www.linkedin.com/feed/update/urn:li:activity:7248251341561622528/
